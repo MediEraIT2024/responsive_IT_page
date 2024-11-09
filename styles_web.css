@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 10px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #007bff;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-top: 10px;
+}
+
+/* Media Query for Tablets */
+@media (min-width: 600px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Media Query for Desktops */
+@media (min-width: 992px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 1;
+        margin: 10px;
+    }
+}
